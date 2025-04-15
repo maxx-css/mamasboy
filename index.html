@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbershop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="images/mamasboy.jpeg" alt="Barbershop Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Book Now</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <img
+            src="images/mamasboy.jpeg"
+            alt="Barbershop Logo"
+            class="hero-logo"
+          />
+          <h1>Mama's Boy Barbershop</h1>
+          <div class="hero-buttons">
+            <button>About Us</button>
+            <button>Services</button>
+            <button>Directions</button>
+            <button>Book Now</button>
+          </div>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="images/facebook-icon.png" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/instagram-icon.png" alt="Instagram"
+            /></a>
+            <a href="#"><img src="images/google-icon.png" alt="Google" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Grid Gallery -->
+    <section id="gallery" class="photo-gallery">
+      <div class="galcontainer">
+        <h2>Our Work</h2>
+        <div class="gallery-grid">
+          <img src="images/IMG_3642.jpg" alt="Haircut 1" />
+          <img src="images/IMG_3643.jpg" alt="Haircut 2" />
+          <img src="images/IMG_3644.jpg" alt="Haircut 3" />
+          <img src="images/IMG_3645.jpg" alt="Haircut 4" />
+          <img src="images/IMG_3646.jpg" alt="Haircut 5" />
+          <img src="images/IMG_3647.jpg" alt="Haircut 6" />
+          <img src="images/IMG_3648.jpg" alt="Haircut 7" />
+          <img src="images/IMG_3649.jpg" alt="Haircut 8" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews" class="reviews">
+      <div class="container">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <p>"Best haircut I've ever had!"</p>
+            <h3>- John Doe</h3>
+          </div>
+          <div class="review-card">
+            <p>"Great service and friendly staff."</p>
+            <h3>- Jane Smith</h3>
+          </div>
+          <div class="review-card">
+            <p>"Highly recommend this barbershop!"</p>
+            <h3>- Mike Johnson</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 [Barbershop Name]. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
