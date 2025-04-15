@@ -199,9 +199,16 @@ body {
 }
 
 /* Customer Reviews */
-.reviews {
+
+#reviews {
+  width: 60%;
+}
+.reviews-section {
   padding: 2rem 0;
   background: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .reviews h2 {

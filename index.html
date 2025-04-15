@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -69,22 +81,38 @@
     </section>
 
     <!-- Customer Reviews -->
-    <section id="reviews" class="reviews">
-      <div class="container">
-        <h2>Customer Reviews</h2>
-        <div class="reviews-grid">
-          <div class="review-card">
-            <p>"Best haircut I've ever had!"</p>
-            <h3>- John Doe</h3>
-          </div>
-          <div class="review-card">
-            <p>"Great service and friendly staff."</p>
-            <h3>- Jane Smith</h3>
-          </div>
-          <div class="review-card">
-            <p>"Highly recommend this barbershop!"</p>
-            <h3>- Mike Johnson</h3>
-          </div>
+    <section class="reviews-section">
+      <div class="reviews-title" style="width: 100%">
+        <h3>Reviews</h3>
+      </div>
+      <div id="reviews" class="reviews responsive">
+        <div class="review-card slick-slide" style="width: 400px">
+          <p>"Best haircut I've ever had!"</p>
+          <h3>- John Doe</h3>
+        </div>
+        <div class="review-card slick-slide" style="width: 400px">
+          <p>"Best haircut I've ever had!"</p>
+          <h3>- John Doe</h3>
+        </div>
+        <div class="review-card slick-slide" style="width: 400px">
+          <p>"Best haircut I've ever had!"</p>
+          <h3>- John Doe</h3>
+        </div>
+        <div class="review-card slick-slide" style="width: 400px">
+          <p>"Best haircut I've ever had!"</p>
+          <h3>- John Doe</h3>
+        </div>
+        <div class="review-card slick-slide" style="width: 400px">
+          <p>"Best haircut I've ever had!"</p>
+          <h3>- John Doe</h3>
+        </div>
+        <div class="review-card slick-slide" style="width: 400px">
+          <p>"Best haircut I've ever had!"</p>
+          <h3>- John Doe</h3>
+        </div>
+        <div class="review-card slick-slide" style="width: 400px">
+          <p>"Best haircut I've ever had!"</p>
+          <h3>- John Doe</h3>
         </div>
       </div>
     </section>
@@ -114,6 +142,21 @@
       </div>
     </footer>
 
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="script.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick.js"></script>
   </body>
 </html>
