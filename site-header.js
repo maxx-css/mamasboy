@@ -17,12 +17,9 @@ class SiteHeader extends HTMLElement {
         <li>
           <a href="index.html" class="nav-link">Home</a>
         </li>
-        <li>
-          <a class="nav-link">About</a>
-        </li>
-        <li>
-          <a class="nav-link">Work</a>
-        </li>
+        <li><a>About</a></li>
+        <li><a>Gallery</a></li>
+
         <li><a class="nav-link book-now">Book Now</a></li>
       </ul>
     </div>
@@ -30,8 +27,7 @@ class SiteHeader extends HTMLElement {
     <nav class="desktop-navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Work</a></li>
+        <li><a class="nav-link contact-now">Contact Now</a></li>
         <li><a class="book-now">Book Now</a></li>
       </ul>
     </nav>

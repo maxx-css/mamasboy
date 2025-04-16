@@ -5,8 +5,8 @@
   --coral: #e05d44;
   --yellow: #e9b44c;
   --light-blue: #79c5c0;
-  --font-sans: 'Raleway', system-ui, -apple-system, sans-serif;
-  --font-serif: Georgia, serif;
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-serif: 'Space Grotesk', sans-serif;
   --color-background: #f5f3f4;
   --color-accent: #adb5bd;
   --color-accent-dark: #6c757d;
@@ -26,7 +26,7 @@
 
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -51,14 +51,38 @@ body {
   border-radius: 20px; /* Rounded button */
   transition: all 0.3s ease; /* Smooth hover effect */
 }
+.desktop-navigation ul li a.contact-now {
+  background-color: white; /* Red background */
+  color: goldenrod; /* White text */
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded button */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
 
 .desktop-navigation ul li a.book-now:hover {
   background-color: #fff; /* White background */
-  color: #e63946; /* Red text */
+  color: goldenrod; /* Red text */
   box-shadow: 0 4px 10px rgba(230, 57, 70, 0.5); /* Add shadow on hover */
 }
 
+.desktop-navigation ul li a.contact-now:hover {
+  background-color: goldenrod; /* White background */
+  color: white; /* Red text */
+  box-shadow: 0 4px 10px rgba(159, 167, 5, 0.5); /* Add shadow on hover */
+}
+
 .desktop-navigation ul li a.book-now::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: var(--ivory);
+  transition: width 0.3s ease;
+}
+.desktop-navigation ul li a.contact-now::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -335,7 +359,7 @@ body {
 
 .hero-logo {
   width: 275px;
-  margin: 40px auto 20px;
+  margin: 100px auto 20px;
 }
 
 .hero h1 {
@@ -598,6 +622,9 @@ color: goldenrod;
     position: absolute;
     top: 25%;
   }
+  .reviews .slick-slide {
+  margin: 10px;
+}
 }
 .review-card h3 {
   font-size: 16px;
