@@ -26,7 +26,7 @@
 
 /* General Styles */
 body {
-  font-family: 'Space Grotesk', sans-serif;;
+  font-family: 'Space Grotesk', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -179,9 +179,21 @@ body {
   transition: all 0.3s;
   position: relative;
   display: inline-block;
-  font-family: 'Space Grotesk', sans-serif;
-  outline: auto;
+  outline-style: solid;
   outline-color: goldenrod;
+  outline-width: thin;
+  padding: 6px;
+}
+#menu a.contact-now {
+  /* text-decoration: none; */
+  font-size: 2rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  position: relative;
+  display: inline-block;
+  outline-style: solid;
+  outline-color: white;
+  outline-width: thin;
   padding: 6px;
 }
 
@@ -474,9 +486,9 @@ body {
   color: #fff;
 }
 
-.hero-buttons a.book-now{
-border: 4px solid goldenrod;
-color: goldenrod;
+.hero-buttons a.book-now {
+  border: 4px solid goldenrod;
+  color: goldenrod;
 }
 .hero-buttons a.book-now .icon-arrow {
   fill: goldenrod;
@@ -612,19 +624,18 @@ color: goldenrod;
   .reviews-section .slick-next:before {
     font-size: 40px !important;
     color: black !important;
-
   }
-    .reviews-section .slick-prev:before{
-      margin-left: -20px;
-    }
+  .reviews-section .slick-prev:before {
+    margin-left: -20px;
+  }
   .review-card p {
     font-size: 14px;
     position: absolute;
     top: 25%;
   }
   .reviews .slick-slide {
-  margin: 10px;
-}
+    margin: 10px;
+  }
 }
 .review-card h3 {
   font-size: 16px;
