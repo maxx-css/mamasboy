@@ -19,7 +19,7 @@ class SiteHeader extends HTMLElement {
         </li>
         <li><a>About</a></li>
         <li><a>Gallery</a></li>
-
+        <li><a class="nav-link contact-now">Contact Now</a></li>
         <li><a class="nav-link book-now">Book Now</a></li>
       </ul>
     </div>
