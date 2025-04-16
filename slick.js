@@ -37,3 +37,5 @@ $(document).ready(function(){
         ],
       });
     });
+
+    $('.slick-gallery-grid').slick()

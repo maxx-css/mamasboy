@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="slick/slick.css" />
@@ -17,23 +23,10 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+    <script src="site-header.js"></script>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">
-          <img src="images/mamasboy.jpeg" alt="Barbershop Logo" />
-        </div>
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Book Now</a></li>
-        </ul>
-      </div>
-    </nav>
-
+    <site-header></site-header>
     <!-- Hero Section -->
     <section id="hero" class="hero">
       <div class="hero-overlay">
@@ -43,17 +36,50 @@
             alt="Barbershop Logo"
             class="hero-logo"
           />
-          <h1>Mama's Boy Barbershop</h1>
+          <div class="title">
+            <p>Mama's Boy Barbershop</p>
+          </div>
           <div class="hero-buttons">
-            <button>About Us</button>
-            <button>Services</button>
-            <button>Directions</button>
-            <button>Book Now</button>
+            <a href="javascript:;">
+              <svg class="icon-arrow before">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              <span class="label">Directions</span>
+              <svg class="icon-arrow after">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </a>
+            <svg style="display: none">
+              <defs>
+                <symbol id="arrow" viewBox="0 0 35 15">
+                  <title>Arrow</title>
+                  <path
+                    d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z "
+                  />
+                </symbol>
+              </defs>
+            </svg>
+            <a href="javascript:;">
+              <svg class="icon-arrow before">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              <span class="label">Book Now</span>
+              <svg class="icon-arrow after">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </a>
+            <svg style="display: none">
+              <defs>
+                <symbol id="arrow" viewBox="0 0 35 15">
+                  <title>Arrow</title>
+                  <path
+                    d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z "
+                  />
+                </symbol>
+              </defs>
+            </svg>
           </div>
           <div class="social-icons">
-            <a href="#"
-              ><img src="images/facebook-icon.png" alt="Facebook"
-            /></a>
             <a href="#"
               ><img src="images/instagram-icon.png" alt="Instagram"
             /></a>
@@ -67,6 +93,16 @@
     <section id="gallery" class="photo-gallery">
       <div class="galcontainer">
         <h2>Our Work</h2>
+        <div class="slick-gallery-grid">
+          <img src="images/IMG_3642.jpg" alt="Haircut 1" />
+          <img src="images/IMG_3643.jpg" alt="Haircut 2" />
+          <img src="images/IMG_3644.jpg" alt="Haircut 3" />
+          <img src="images/IMG_3645.jpg" alt="Haircut 4" />
+          <img src="images/IMG_3646.jpg" alt="Haircut 5" />
+          <img src="images/IMG_3647.jpg" alt="Haircut 6" />
+          <img src="images/IMG_3648.jpg" alt="Haircut 7" />
+          <img src="images/IMG_3649.jpg" alt="Haircut 8" />
+        </div>
         <div class="gallery-grid">
           <img src="images/IMG_3642.jpg" alt="Haircut 1" />
           <img src="images/IMG_3643.jpg" alt="Haircut 2" />
@@ -87,7 +123,7 @@
       </div>
       <div id="reviews" class="reviews responsive">
         <div class="review-card slick-slide" style="width: 400px">
-          <p>"Best haircut I've ever had!"</p>
+          <p style="font-size: 48px">"Best haircut I've ever had!"</p>
           <h3>- John Doe</h3>
         </div>
         <div class="review-card slick-slide" style="width: 400px">
@@ -133,11 +169,12 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 [Barbershop Name]. All rights reserved.</p>
+        <p>
+          &copy; 2025 Mama's Boy Barbershop Preview to Ben from Max. All rights
+          reserved.
+        </p>
         <div class="social-links">
-          <a href="#">Facebook</a>
           <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
         </div>
       </div>
     </footer>
