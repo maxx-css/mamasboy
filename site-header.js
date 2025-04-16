@@ -4,7 +4,7 @@ class SiteHeader extends HTMLElement {
     this.innerHTML = `
 <header class="site-header">
   <div class="header-content">
-    <div class="logo"> Hello
+    <div class="logo">
     </div>
 
     <div id="menuToggle" class="mobile-menu">
