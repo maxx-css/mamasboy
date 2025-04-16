@@ -2,11 +2,12 @@
 $(document).ready(function(){
 
       $('.responsive').slick({
+        // centerMode: true,
         dots: true,
         infinite: false,
         speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         responsive: [
           {
             breakpoint: 1024,

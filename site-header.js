@@ -18,21 +18,21 @@ class SiteHeader extends HTMLElement {
           <a href="index.html" class="nav-link">Home</a>
         </li>
         <li>
-          <a href="index.html#about" class="nav-link">About</a>
+          <a class="nav-link">About</a>
         </li>
         <li>
-          <a href="index.html#work" class="nav-link">Work</a>
+          <a class="nav-link">Work</a>
         </li>
-        <li><a href="contact.html" class="nav-link book-now">Book Now</a></li>
+        <li><a class="nav-link book-now">Book Now</a></li>
       </ul>
     </div>
 
     <nav class="desktop-navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#work">Work</a></li>
-        <li><a href="contact.html" class="book-now">Book Now</a></li>
+        <li><a>About</a></li>
+        <li><a>Work</a></li>
+        <li><a class="book-now">Book Now</a></li>
       </ul>
     </nav>
   </div>
